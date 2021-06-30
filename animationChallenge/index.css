@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+	display: grid;
+	height: 100%;
+	width: 100%;
+	place-items: center;
+	background: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+}
+
+/* The animation code */
+@keyframes fbIcon {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+/* The element to apply the animation to */
+.fab fa-facebook {
+	margin: 20px 0 0 20px;
+	width: 200px;
+	height: 200px;
+	animation-name: fbIcon;
+	animation-duration: infinite;
+	animation-direction: alternate;
+	transition: all 3s ease-out;
+}
+
+a:hover {
+	animation-name: fbIcon;
+	animation-duration: 1s;
+	transition-timing-function: ease-out;
+	color: black;
+	animation-iteration-count: infinite;
+	filter: drop-shadow(5px 5px 10px #0f459b) invert(50%);
+}

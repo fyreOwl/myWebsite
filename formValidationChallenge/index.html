@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="/Forms/style.css">
+	<title>Registration Form</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="title">
+			Registration Form
+		</div>
+		<div class=form>
+			<forms action="#" method="post">
+				<div class="input_field">
+					<label for="user">User id:</label>
+					<input type="text" name="user" id="user" minlength="5" maxlength="12" required class="input">
+				</div>
+				<div class="input_field">
+					<label for="password">Password:</label>
+					<input type="password" name="password" id="password" minlength="7" maxlength="12" required class="input">
+				</div>
+				<div class="input_field">
+					<label for="name">Name:</label>
+					<input type="text" name="name" id="name" pattern=["A-Za-z"] required title="Required: Alphabet Only" class="input">
+				</div>
+				<div class="input_field">
+					<label for="address">Address:</label>
+					<input type="text" name="address" id="address" placeholder="Optional" class="input">
+				</div>
+				<div class="input_field">
+					<label>Country:</label>
+					<div class="custom_select">
+						<select>
+							<option value="Algeria">Algeria</option>
+							<option value="South Africa">South Africa</option>
+							<option value="Zimbabwe">Zimbabwe</option>
+						</select>
+					</div>
+				</div>
+				<div class="input_field">
+					<label for="zipCode">Zip Code:</label>
+					<input type="text" name="zipCode" id="zipCode" pattern=["0-9"] title="Numbers Only" required class="input">
+				</div>
+				<div class="input_field">
+					<label for="email">Email:</label>
+					<input type="email" name="email" id="email" placeholder="Required: ex.: name@domain" class="input">
+				</div>
+				<div class="input_field">
+					<label for="sex" required>Sex:</label>
+					<div class="gender_select">
+						<input type="radio" name="sex" id="sex" value="Male" required> Male
+						<input type="radio" name="sex" id="sex" value="Female" required> Female
+					</div>
+				</div>
+				<div class="input_field">
+					<label for="language">Language:</label>
+					<div class="language_select">
+						<input type="checkbox" name="language" id="language" value="checked" required>English
+						<input type="checkbox" name="language" id="language" value="checked" required> Non English
+					</div>
+				</div>
+				<div class="input_field">
+					<label>About:</label>
+					<textarea name="about" id="about" cols="22" rows="10" placeholder="Optional" class="input"></textarea>
+				</div>
+				<div class="input_btn">
+					<input type="submit" name="btn" id="submit" value="Submit" class="btn">
+				</div>
+			</forms>
+		</div>
+	</div>
+
+</body></html>
